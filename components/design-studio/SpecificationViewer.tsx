@@ -5,8 +5,8 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Download, Eye, FileText, X } from 'lucide-react';
 
-const PDF_URL = '/documents/OMEGAA SPEC AND QUOTE FINAL ONE.pdf';
-const DOWNLOAD_NAME = 'OMEGAA SPEC AND QUOTE FINAL ONE.pdf';
+const PDF_URL = '/documents/omegaa-construction-specification.pdf';
+const DOWNLOAD_NAME = 'Omegaa Construction Specification.pdf';
 const TITLE = 'Omegaa Construction Specification';
 
 export default function SpecificationViewer() {
