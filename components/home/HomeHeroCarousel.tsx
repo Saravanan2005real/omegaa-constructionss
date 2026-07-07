@@ -56,30 +56,30 @@ export default function HomeHeroCarousel({ images }: HomeHeroCarouselProps) {
   }
 
   return (
-    <div className="isolate w-full px-4 pt-4 pb-6 md:px-8 md:pt-5 md:pb-8 lg:px-12 lg:pt-6 lg:pb-10">
+    <div className="isolate w-full max-w-5xl mx-auto px-4 pt-4 pb-6 md:px-8 md:pt-5 md:pb-8 lg:px-12 lg:pt-6 lg:pb-10">
       <div className="group/hero relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-[0_8px_32px_rgba(15,23,42,0.10)] md:rounded-3xl">
-        <div className="relative aspect-[16/9] min-h-[220px] w-full sm:min-h-[300px] md:min-h-[380px] lg:min-h-[460px]">
+        <div className="relative aspect-[16/8] min-h-[200px] w-full sm:min-h-[270px] md:min-h-[340px] lg:min-h-[400px]">
         <motion.div
-          className="flex h-full"
-          animate={{ x: `-${currentSlide * 100}%` }}
-          transition={{ type: 'spring', stiffness: 420, damping: 38, mass: 0.75 }}
-        >
-          {images.map((src, index) => (
-            <div
-              key={src}
-              className="relative flex h-full w-full shrink-0 basis-full items-center justify-center bg-slate-50"
-            >
-              <Image
-                src={src}
-                alt={`Omegaa Constructions hero slide ${index + 1}`}
-                fill
-                className="object-contain object-center"
-                sizes="100vw"
-                priority={index === 0}
-              />
-            </div>
-          ))}
-        </motion.div>
+           className="flex h-full"
+           animate={{ x: `-${currentSlide * 100}%` }}
+           transition={{ type: 'spring', stiffness: 420, damping: 38, mass: 0.75 }}
+         >
+           {images.map((src, index) => (
+             <div
+               key={src}
+               className="relative flex h-full w-full shrink-0 basis-full items-center justify-center bg-slate-50"
+             >
+               <Image
+                 src={src}
+                 alt={`Omegaa Constructions hero slide ${index + 1}`}
+                 fill
+                 className="object-cover object-center"
+                 sizes="100vw"
+                 priority={index === 0}
+               />
+             </div>
+           ))}
+         </motion.div>
         </div>
 
         <button
