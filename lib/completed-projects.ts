@@ -600,13 +600,13 @@ export const completedProjects: CompletedProject[] = [
   },
   {
     slug: 'duplex-m-nagar',
-    name: 'Meenakshi Nagar, Duplex',
+    name: 'Meenakshi Nagar, Duplex, Kanchipuram',
     summary:
       'A completed duplex residence built with thoughtful planning, durable structure, and refined finishing.',
     coverImage: '/images/completed/duplex-m-nagar/20170913_162058.webp',
     photos: projectPhotos('duplex-m-nagar', duplexMNagarPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Meenakshi Nagar, Duplex',
+      'Meenakshi Nagar, Duplex, Kanchipuram',
       duplexMNagarPhotoFiles.length,
     ),
   },
