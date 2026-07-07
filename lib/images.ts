@@ -2,13 +2,13 @@ import { designStudioMedia, omegaaVisualizationImages } from './design-studio';
 
 export const images = {
   logo: '/images/logo.webp',
-  hero: '/images/hero.webp',
+  hero: '/images/banner-1.webp',
   heroSlides: [
-    '/images/hero.webp',
-    '/images/hero-2.webp',
-    '/images/hero-revathi-nagar.webp',
-    '/images/hero-vaiyavoor.webp',
-    '/images/hero-vedachalam-nagar.webp',
+    '/images/banner-1.webp',
+    '/images/banner-2.webp',
+    '/images/banner-3.webp',
+    '/images/banner-4.webp',
+    '/images/banner-5.webp',
   ] as const,
   map: '/images/map.webp',
   completedProjectsHero: '/images/completed/hero/slide-1.webp',
