@@ -56,9 +56,9 @@ export default function HomeHeroCarousel({ images }: HomeHeroCarouselProps) {
   }
 
   return (
-    <div className="isolate w-full max-w-5xl mx-auto px-4 pt-4 pb-6 md:px-8 md:pt-5 md:pb-8 lg:px-12 lg:pt-6 lg:pb-10">
+    <div className="isolate w-full max-w-7xl mx-auto px-4 pt-4 pb-6 md:px-8 md:pt-5 md:pb-8 lg:px-12 lg:pt-6 lg:pb-10">
       <div className="group/hero relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-[0_8px_32px_rgba(15,23,42,0.10)] md:rounded-3xl">
-        <div className="relative aspect-[16/8] min-h-[200px] w-full sm:min-h-[270px] md:min-h-[340px] lg:min-h-[400px]">
+        <div className="relative aspect-[16/8.5] min-h-[210px] w-full sm:min-h-[290px] md:min-h-[370px] lg:min-h-[440px]">
         <motion.div
            className="flex h-full"
            animate={{ x: `-${currentSlide * 100}%` }}
