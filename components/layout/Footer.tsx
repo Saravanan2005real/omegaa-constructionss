@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { navItems } from '@/lib/constants';
 import SiteTagline from '@/components/layout/SiteTagline';
-import { FooterSocialLinks } from '@/components/layout/SocialIcons';
+import { FooterSocialLinks, FooterContactLinks } from '@/components/layout/SocialIcons';
 
 export default function Footer() {
   return (
@@ -36,13 +36,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Right Column: Social Icons */}
+          {/* Right Column: Social & Contact Icons */}
           <div className="flex w-full flex-col items-center justify-start md:items-end md:pl-10 lg:pl-14">
             <div className="inline-flex flex-col items-start">
               <h3 className="mb-4 text-left text-sm font-semibold uppercase tracking-widest text-gold">
                 Follow Us
               </h3>
               <FooterSocialLinks />
+
+              <h3 className="mt-6 mb-4 text-left text-sm font-semibold uppercase tracking-widest text-gold">
+                Contact Us
+              </h3>
+              <FooterContactLinks />
             </div>
           </div>
         </div>
