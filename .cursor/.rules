@@ -1,0 +1,119 @@
+# Construction Company Website Rules
+
+## General
+
+* Always generate production-ready code.
+* Use Next.js App Router.
+* Use TypeScript strictly.
+* Never use the "any" type.
+* Follow clean code principles.
+* Keep components modular and reusable.
+* Avoid code duplication.
+
+## Architecture
+
+* Use Server Components by default.
+* Use Client Components only when necessary.
+* Separate UI, business logic, and data fetching.
+* Maintain scalable folder structure.
+
+## Styling
+
+* Use Tailwind CSS only.
+* Follow mobile-first design.
+* Use consistent spacing and typography.
+* Avoid inline styles unless necessary.
+
+## SEO
+
+* Every page must contain:
+
+  * Title
+  * Meta description
+  * Open Graph tags
+  * Structured data
+
+* Use semantic HTML elements.
+
+* Optimize all pages for search engines.
+
+## Performance
+
+* Use Next.js Image component.
+* Optimize images before usage.
+* Lazy load non-critical content.
+* Minimize client-side JavaScript.
+* Maintain Lighthouse score above 90.
+
+## Accessibility
+
+* Use proper heading hierarchy.
+* Add alt text to images.
+* Support keyboard navigation.
+* Use ARIA labels where appropriate.
+
+## Security
+
+* Never expose secrets.
+* Use environment variables.
+* Validate all form inputs.
+* Sanitize user input.
+
+## UI Guidelines
+
+The website must feel:
+
+* Premium
+* Modern
+* Professional
+* Corporate
+* Trustworthy
+
+Avoid:
+
+* Excessive animations
+* Neon colors
+* Cluttered layouts
+* Overly complex interactions
+
+## Animation
+
+Use Framer Motion sparingly.
+
+Preferred:
+
+* Fade in
+* Slide up
+* Scroll reveal
+* Hover transitions
+
+Avoid:
+
+* Bounce effects
+* Excessive motion
+* Performance-heavy animations
+
+## Code Review Checklist
+
+Before generating code verify:
+
+* Responsive design
+* SEO compliance
+* Accessibility compliance
+* TypeScript correctness
+* Performance optimization
+* Reusability
+
+
+project-root/
+│
+├── .cursorrules
+│
+├── .cursor/
+│   └── skills/
+│       └── construction-company.skill.md
+│
+├── src/
+├── components/
+├── app/
+└── public/
