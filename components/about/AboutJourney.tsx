@@ -94,6 +94,20 @@ export default function AboutJourney() {
             ))}
           </ol>
         </div>
+
+        {/* Standalone Trust Callout Design Box */}
+        <div className="mt-16 rounded-3xl border border-gold/30 bg-gradient-to-r from-brand-blue to-[#0e21bc] p-8 text-center text-white shadow-[0_12px_40px_rgba(21,46,255,0.12)] relative overflow-hidden group">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(232,205,130,0.12),transparent)] pointer-events-none" aria-hidden="true" />
+          <div className="relative z-10 flex flex-col items-center">
+            <h3 className="text-xl font-bold tracking-tight text-[#E8CD82] md:text-2xl lg:text-3xl">
+              30+ Years of Trusted Construction Excellence
+            </h3>
+            <div className="w-16 h-1 bg-gold/50 my-4 rounded-full" />
+            <p className="max-w-2xl text-sm font-light leading-relaxed text-slate-100 md:text-base lg:text-lg">
+              Continuing to serve clients with the same dedication to quality, transparency, and on-time delivery that defined our founding years.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

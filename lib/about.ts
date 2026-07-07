@@ -32,12 +32,6 @@ export const journeyTimeline = [
       'Led the construction of Bakthavachalam Polytechnic, a self-financing college, contributing to the development of a major educational institution.',
   },
   {
-    year: '50+',
-    title: 'Residential & Commercial Projects',
-    description:
-      'Delivered 50+ residential and commercial projects across Tamil Nadu, building a reputation for reliability and craftsmanship.',
-  },
-  {
     year: '2018–2020',
     title: 'Mahindra & Mahindra Vehicle Test Track Project',
     description:
@@ -45,9 +39,9 @@ export const journeyTimeline = [
   },
   {
     year: 'Today',
-    title: '30+ Years of Trusted Construction Excellence',
+    title: 'Residential & Commercial Projects',
     description:
-      'Continuing to serve clients with the same dedication to quality, transparency, and on-time delivery that defined our founding years.',
+      'Delivered lots of residential and commercial projects and building a reputation for reliability and craftsmanship.',
   },
 ] as const;
 
