@@ -91,7 +91,11 @@ type DesignStudioGallerySection = {
   id: string;
   heading: string;
   type: 'gallery';
-  pairs: typeof visualizationPairs;
+  pairs: ReadonlyArray<{
+    readonly title: string;
+    readonly left: { readonly src: string; readonly alt: string; readonly caption: string };
+    readonly right: { readonly src: string; readonly alt: string; readonly caption: string };
+  }>;
 };
 
 export type DesignStudioSection =
@@ -121,36 +125,37 @@ export const designStudioSections: DesignStudioSection[] = [
     pairs: visualizationPairs,
   },
   {
-    id: 'duplex-top-front-view',
-    heading: 'Duplex Top Front View',
-    type: 'image',
-    src: '/design-studio/DUPLEX TOP FRONT VIEW .jpg.jpeg',
-    alt: 'Duplex Top Front View',
-    aspectClass: 'aspect-video',
-  },
-  {
-    id: 'duplex-top-left-view',
-    heading: 'Duplex Top Left View',
-    type: 'image',
-    src: '/design-studio/DUPLEX TOP LEFT VIEW.jpg.jpeg',
-    alt: 'Duplex Top Left View',
-    aspectClass: 'aspect-video',
-  },
-  {
-    id: 'duplex-top-rear-view',
-    heading: 'Duplex Top Rear View',
-    type: 'image',
-    src: '/design-studio/DUPLEX TOP REAR VIEW.jpg.jpeg',
-    alt: 'Duplex Top Rear View',
-    aspectClass: 'aspect-video',
-  },
-  {
-    id: 'duplex-top-right-view',
-    heading: 'Duplex Top Right View',
-    type: 'image',
-    src: '/design-studio/DUPLEX TOP RIGHT VIEW.jpg.jpeg',
-    alt: 'Duplex Top Right View',
-    aspectClass: 'aspect-video',
+    id: 'duplex-top-views',
+    heading: 'Duplex Top Views',
+    type: 'gallery',
+    pairs: [
+      {
+        title: 'Front & Left Views',
+        left: {
+          src: '/design-studio/DUPLEX TOP FRONT VIEW .jpg.jpeg',
+          alt: 'Duplex Top Front View',
+          caption: 'Duplex Top Front View',
+        },
+        right: {
+          src: '/design-studio/DUPLEX TOP LEFT VIEW.jpg.jpeg',
+          alt: 'Duplex Top Left View',
+          caption: 'Duplex Top Left View',
+        },
+      },
+      {
+        title: 'Rear & Right Views',
+        left: {
+          src: '/design-studio/DUPLEX TOP REAR VIEW.jpg.jpeg',
+          alt: 'Duplex Top Rear View',
+          caption: 'Duplex Top Rear View',
+        },
+        right: {
+          src: '/design-studio/DUPLEX TOP RIGHT VIEW.jpg.jpeg',
+          alt: 'Duplex Top Right View',
+          caption: 'Duplex Top Right View',
+        },
+      },
+    ],
   },
   {
     id: 'elevation-view',
