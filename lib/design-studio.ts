@@ -87,15 +87,23 @@ type DesignStudioVideoSection = {
   src: string;
 };
 
+type GalleryImage = {
+  readonly src: string;
+  readonly alt: string;
+  readonly caption: string;
+};
+
+type GalleryPair = {
+  readonly title: string;
+  readonly left: GalleryImage;
+  readonly right: GalleryImage;
+};
+
 type DesignStudioGallerySection = {
   id: string;
   heading: string;
   type: 'gallery';
-  pairs: ReadonlyArray<{
-    readonly title: string;
-    readonly left: { readonly src: string; readonly alt: string; readonly caption: string };
-    readonly right: { readonly src: string; readonly alt: string; readonly caption: string };
-  }>;
+  pairs: ReadonlyArray<GalleryPair>;
 };
 
 export type DesignStudioSection =
